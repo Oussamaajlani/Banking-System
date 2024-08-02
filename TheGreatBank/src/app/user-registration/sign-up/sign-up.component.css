@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  padding: 2% 0;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon img {
+  max-width: 60px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  text-align: center;
+}
+.form .icon .pack h1 {
+  margin: 0px;
+  font-size: 24px;
+}
+.form .icon .pack p {
+  margin: 0px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.form input, .form select {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 5px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.form .btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #000;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form .btn:hover {
+  background: #4CAF50;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form h5 a {
+  color: #4CAF50;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

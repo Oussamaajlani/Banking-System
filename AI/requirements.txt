@@ -1,0 +1,5 @@
+flask
+gym
+stable-baselines3
+numpy
+Flask-Cors

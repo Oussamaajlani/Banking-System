@@ -1,0 +1,66 @@
+.recent-transactions {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect the width */
+}
+
+.recent-transactions h3 {
+    font-size: 1.25rem; /* Larger on larger screens, smaller on mobile */
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.scrollable-table {
+    overflow-y: auto;
+    max-height: 400px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allows table to adjust column widths based on content */
+}
+
+thead th {
+    background-color: white;
+    position: sticky;
+    top: 0; /* Keeps header at the top */
+    z-index: 10;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.4); /* Adds shadow for a lifting effect */
+}
+
+th, td {
+    border: none;
+    padding: 8px 10px; /* Reduced padding */
+    text-align: left;
+    font-size: 0.85rem; /* Adjusted font size */
+}
+
+.header-style {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.deposit-amount {
+    color: green;
+}
+
+.withdrawal-amount {
+    color: red;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .recent-transactions {
+        max-width: 100%; /* Ensures the component is fully fluid */
+    }
+    th, td {
+        padding: 8px; /* Smaller padding for smaller screens */
+    }
+    thead th {
+        font-size: 0.75rem; /* Smaller font size for headers on smaller screens */
+    }
+    .scrollable-table {
+        max-height: 200px; /* Smaller height to fit in mobile screens better */
+    }
+}

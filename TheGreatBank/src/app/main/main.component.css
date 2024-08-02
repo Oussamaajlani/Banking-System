@@ -1,0 +1,44 @@
+
+.top-section{
+    /*height: 200px; */
+    height: 300px;
+    width: 920px;
+    margin-bottom: 20px;
+
+}
+.bottom-section{
+    display: flex;
+    width: 920px;
+}
+.left{
+    width: 470px;
+    margin-right: 10px;
+}
+.left .left-top{
+    display: flex;
+    height: 16.5vh;
+   
+    .balance{
+        
+        width: 480px;
+        margin-right: 10px;
+    }
+    
+}
+
+.right{
+    width: 40vw;
+    background-color: white;
+    margin-left: 10px;
+    height: 54vh;
+}
+.left-bottom{
+    background-color: whites;
+    margin-top: 20px;
+    height: 34.8vh;
+}
+app-recent-transactions{
+    height: 100%;
+    width: 100%;
+    
+}

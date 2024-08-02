@@ -1,0 +1,14 @@
+<div class="form" [style.display]="showForm ? 'block' : 'none'">
+  <h1>Withdraw Money</h1>
+  <form class="login-form">
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" [(ngModel)]="amount" name="amount" required>
+    </div>
+    
+    <div class="button-group">
+      <button class="btn btn-deposit" type="button" (click)="onSubmit()">Deposit</button>
+      <button class="btn btn-cancel" type="button" (click)="cancel()">Cancel</button>
+    </div>
+  </form>
+</div>

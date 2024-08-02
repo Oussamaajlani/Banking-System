@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.content{
+    background-color: white;
+    height: auto;
+}
+.tab{
+    height: 35%;
+}
+#barChart{
+    height: 300px;
+}

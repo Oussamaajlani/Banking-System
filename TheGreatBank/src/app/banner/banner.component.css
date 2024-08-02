@@ -1,0 +1,24 @@
+.banner {
+    position: relative;
+    width: 100%; /* or you can set a specific width */
+    height: 100%; /* set the height of the banner */
+    background-image: url('/assets/bannerpicture.jpeg'); /* add your image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  .banner-text {
+    position: absolute;
+    bottom: 10px; /* adjust as needed */
+    left: 10px; /* set the text to the bottom left */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3); /* optional: for better readability on top of an image */
+    color: white; /* text color */
+    font-size: 1.2em;
+   
+  }
+  .banner-text p {
+   margin: 0px;
+  }
+  

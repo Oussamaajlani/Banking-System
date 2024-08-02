@@ -1,0 +1,24 @@
+<div class="login-page">
+  <div class="form">
+    <div class="icon">
+      <img src="assets/icons/appicon.png" alt="">
+      <div class="pack">
+        <h1>Hello Again!</h1>
+        <p>Please sign in to continue.</p>
+      </div>
+    </div>
+    <form class="login-form">
+      <input #userName required placeholder="Username" />
+      <input #userPassword required placeholder="Password" />
+      <p class="fgt"><a routerLink="/forgot-password">Forgot password?</a></p>
+      <input
+        class="btn"
+        type="button"
+        value="Log in"
+        (click)="signIn(userName.value, userPassword.value)"
+      />
+      <p routerLink="/signup" class="message">Not registered? <a>Create an account</a></p>
+      <h5><a href="#">Back home</a></h5>
+    </form>
+  </div>
+</div>

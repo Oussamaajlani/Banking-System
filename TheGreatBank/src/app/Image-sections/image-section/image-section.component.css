@@ -1,0 +1,32 @@
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  .image-container img {
+      height: 100vh;
+      float: left;
+      background-size: cover;
+    }
+    .overlay-text {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: absolute;
+      top: 85%; 
+      left: 65%; 
+      transform: translate(-50%, -50%); 
+      color: #fff; 
+      font-size: 20px; 
+      text-align: left;}
+
+      .overlay-text h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        top: 85%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+        color: #fff; 
+        font-size: 30px; 
+        text-align: left;
+        font-weight: 700;
+      }
+    

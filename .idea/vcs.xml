@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/TheGreatBank" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/main/kwd-dashboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/main/tailwind-admin-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/kwd-dashboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/tailwind-admin-template" vcs="Git" />
+  </component>
+</project>

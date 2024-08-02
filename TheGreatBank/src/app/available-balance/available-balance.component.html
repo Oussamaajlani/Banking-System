@@ -1,0 +1,10 @@
+<div class="account-widget">
+  <div class="balance-info">
+    <img src="assets/Online Banking Portal/clarity_wallet-line.png" alt="">
+    <span>Cheque Account</span>
+  </div>
+  <div class="account-details">
+    <div class="account-number"><p>{{ userProfile?.id }}</p></div>
+    <div><h2>{{ balance | customCurrency:'TND' }}</h2></div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+
+<div class="quick-transactions-widget">
+    <h3>Quick Transactions</h3>
+    <div class="line"></div>
+    
+ 
+  
+
+
+    <ul>
+      <div class="transact1" (click)="openWithdrawMoney()">
+        <li><img src="assets/Online Banking Portal/uil_transaction.png" alt=""> Withdraw Money</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt=""> 
+      </div>
+      <div class="transact2"   (click)="openDepositeMoney()" >
+        <li><img src="assets/Online Banking Portal/mdi_instant-deposit.png" alt=""> Deposit Money</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt="">
+      </div>
+      <div class="transact3">
+        <li><img src="assets/Online Banking Portal/mdi_recurring-payment.png" alt=""> Recurring Payments</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt="">
+      </div>
+      <div class="transact4" (click)="openTranferMoney()">
+        <li><img src="assets/Online Banking Portal/cil_transfer.png" alt=""> Transfer Funds</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt="">
+      </div>
+      <div class="transact5">
+        <li><img src="assets/Online Banking Portal/mingcute_bill-line.png" alt=""> Bill Payments</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt="">
+      </div>
+      <div class="transact6">
+        <li><img src="assets/Online Banking Portal/clarity_wallet-line.png" alt=""> Budgeting tools</li>
+        <img src="assets/Online Banking Portal/ion_chevron-forward-sharp.png" alt="">
+      </div>    
+
+      <div *ngIf="isWithdrawMoney" class="popout">
+         
+          <div class="content">
+              <!-- Your content here -->
+               <app-withdraw></app-withdraw>
+          </div>
+      </div>
+
+      <div *ngIf="isTranferMoney" class="popout">
+        
+          <div class="content">
+              <!-- Your content here -->
+              <app-deposit-money></app-deposit-money>
+          </div>
+      </div>
+
+      <div *ngIf="isDepositMoney" class="popout">
+        
+        <div class="content">
+            <!-- Your content here -->
+            <app-deposit-money></app-deposit-money>
+        </div>
+    </div>
+
+
+     
+    </ul>
+  </div>
+

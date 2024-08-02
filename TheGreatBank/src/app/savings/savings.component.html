@@ -1,0 +1,11 @@
+<div class="account-widget">
+    <div class="balance-info">
+      <img src="assets/Online Banking Portal/clarity_wallet-line.png" alt=""> <!-- You can use a different icon library if you prefer -->
+      <span>Savings Account</span>
+    </div>
+    <div class="account-details">
+      <div class="account-number"><p>{{ userInfo.accountNumber }} </p></div>
+      <div > <h2>{{ balances?.savingsAccount | currency:'ZAR':'symbol':'1.2-2'}}</h2></div>
+    </div>
+  </div>
+  

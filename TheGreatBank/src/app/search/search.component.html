@@ -1,0 +1,9 @@
+<div class="search-container">
+    <input [(ngModel)]="searchTerm" placeholder="Search..." />
+    <button>Search</button>
+  
+    <div *ngIf="results.length > 0" class="results-container">
+      <div *ngFor="let result of results" class="result-item">{{ result }}</div>
+    </div>
+  </div>
+  

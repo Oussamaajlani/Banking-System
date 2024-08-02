@@ -1,0 +1,83 @@
+.quick-transactions-widget {
+    width: 460px;
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding-right: 40px;
+  }
+
+  .trigger {
+    background-color:aquamarine
+    /* Your styling for the trigger div */
+}
+
+.popout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Your styling for the popout div */
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    /* Your styling for the close button */
+}
+
+
+
+  .quick-transactions-widget h3 {
+    margin-top: 4;
+    margin-bottom: 10px;
+    font-size:large;
+    font-weight: 500;
+   
+  }
+  .line {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  
+  .quick-transactions-widget ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  .quick-transactions-widget li {
+    padding: 4px;
+    font-size:small;
+    display: flex;
+  }
+  .quick-transactions-widget div {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .quick-transactions-widget div:hover {
+    background-color: rgba(0, 0, 0, 0.056);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .quick-transactions-widget div img{
+    width: 20px;
+    height: 20px;
+  }
+  .quick-transactions-widget li img{
+    max-width: 20px;
+    margin-right: 5px;
+  }
+  
+  .quick-transactions-widget i {
+    margin-right: 5px;
+    color: #5a5a5a; /* adjust color as needed */
+  }
+  

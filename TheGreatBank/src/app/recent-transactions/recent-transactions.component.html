@@ -1,0 +1,27 @@
+<div class="recent-transactions">
+    <h3>Recent Transactions</h3>
+    
+    <div class="scrollable-table">
+        <table>
+            <thead>
+                <tr>
+                    
+                    <td class="header-style">Type</td>
+                    <td class="header-style">Date</td>
+                    <td class="header-style">Amount</td>
+                
+                </tr>
+            </thead>
+        <tbody >
+            <tr *ngFor="let transaction of transactions" [ngClass]="{'deposit-row': transaction.type === 'depot', 'withdrawal-row': transaction.type === 'retrait'}">
+                <td>{{ transaction.type }}</td>
+                <td>{{ transaction.timestamp }}</td>
+                <td [ngClass]="{'deposit-amount': transaction.type === 'depot', 'withdrawal-amount': transaction.type === 'retrait'}">
+                    {{ transaction.amount |  customCurrency:'TND' }}
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+</div>

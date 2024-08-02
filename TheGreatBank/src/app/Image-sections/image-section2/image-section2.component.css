@@ -1,0 +1,27 @@
+.image-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: relative;
+      display: inline-block;
+    }
+    .image-container img {
+        height: 100vh;
+        float: left;
+        background-size: cover;
+        background-position: center;
+      }
+      .overlay-text {
+        position: absolute;
+        top: 85%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+        color: #fff; 
+        font-size: 13000px; 
+        text-align: left;
+      }
+      .overlay-text h2 {
+        color: #fff; 
+        font-weight: 700;
+        font-size: 20px; 
+        text-align: left;
+      }
+      

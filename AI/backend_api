@@ -1,0 +1,48 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import random
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS
+
+@app.route('/services', methods=['GET'])
+def get_services():
+    customer_id = request.args.get('customer_id')
+    
+    if not customer_id:
+        return jsonify({'error': 'Customer ID is required'}), 400
+
+    services = {
+        "savingAccount": random.choice([0,2]),
+         "guarantees": random.choice([0,2]),
+         "currentAccounts": random.choice([0,2]),
+         "derivadaAccount": random.choice([0,2]),
+         "payrollAccount": random.choice([0,2]),
+         "juniorAccount": random.choice([0,2]),
+         "masParticularAccount": random.choice([0,2]),
+        "particularAccount": random.choice([0,2]),
+         "particularPlusAccount": random.choice([0,2]),
+         "shortTermDeposits": random.choice([0,2]),
+         "mediumTermDeposits": random.choice([0,2]),
+         "longTermDeposits": random.choice([0,2]),
+         "eAccount": random.choice([0,2]),
+         "funds": random.choice([0,2]),
+         "mortgage": random.choice([0,2]),
+         "pensions": random.choice([0,2]),
+         "loans": random.choice([0,1,2]),
+         "taxes": random.choice([0,1,2]),
+         "creditCard": random.choice([0,1,2]),
+     "securities": random.choice([0,1,2]),
+        "homeAccount": random.choice([0,1,2]),
+         "payroll": random.choice([0,1,2]),
+         "pensionsTwo": random.choice([0,1,2]),
+         "directDebit": random.choice([0,1,2])
+    }
+
+    return jsonify({
+        'customer_id': customer_id,
+        'services': services
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True)

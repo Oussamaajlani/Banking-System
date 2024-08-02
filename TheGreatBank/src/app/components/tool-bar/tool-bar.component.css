@@ -1,0 +1,58 @@
+
+.toolbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 0px solid #1B191B;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    padding: 13px;
+  }
+  
+  .signin-button {
+    border-radius: 60px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white;
+    width: 90px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    font-size: medium;
+  }
+  .signin-button:hover {
+    border-radius: 60px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    
+  }
+  .menu-bars{
+    max-width: 40px;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .logo img {
+    height: 35px; /* adjust as necessary */
+  }
+  
+  /* Optional: Dropdown menu styling */
+  .menu {
+    position: absolute;
+    top: 60px; /* adjust as necessary */
+    left: 10px; /* adjust as necessary */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  

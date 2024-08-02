@@ -1,0 +1,83 @@
+<div class="login-page">
+  <div class="form">
+    <!-- header -->
+    <div class="icon">
+      <img src="assets/icons/appicon.png" alt="">
+      <div class="pack">
+        <h1>Register</h1>
+        <p>Let's get you set up so you can manage your money with ease.</p>
+      </div>
+    </div>
+
+    <!-- form -->
+    <form (submit)="onSubmit(f)" #f="ngForm">
+      <div class="form-grid">
+        <!-- Column 1 -->
+        <div class="form-column">
+          <input type="text" ngModel name="firstname" placeholder="First Name" required>
+          <input type="text" ngModel name="secondname" placeholder="Last Name" required>
+          <input type="text" ngModel name="username" placeholder="Username" required>
+          <input type="password" ngModel name="password" placeholder="Password" required>
+          <input type="tel" ngModel name="phonenumber" placeholder="Phone number" required>
+          <input type="text" ngModel name="address" placeholder="Physical Address" required>
+          <input type="date" ngModel name="fechaDato" placeholder="Registration Date" required>
+          <input type="text" ngModel name="empIndex" placeholder="Employee Index" required>
+          <input type="text" ngModel name="residence" placeholder="Country of Residence" required>
+          <input type="text" ngModel name="sex" placeholder="Sex" required>
+          <input type="number" ngModel name="age" placeholder="Age" required>
+          <input type="date" ngModel name="firstDate" placeholder="First Contract Date" required>
+          <input type="number" ngModel name="seniority" placeholder="Seniority (months)" required>
+          <input type="number" ngModel name="isPrimary" placeholder="Primary Index" required>
+        </div>
+        <!-- Column 2 -->
+        <div class="form-column">
+          <input type="date" ngModel name="lastPrimaryDate" placeholder="Last Primary Date" required>
+          <input type="text" ngModel name="custType" placeholder="Customer Type" required>
+          <input type="text" ngModel name="custRelType" placeholder="Customer Relationship Type" required>
+          <input type="text" ngModel name="channel" placeholder="Channel" required>
+          <input type="number" ngModel name="addressType" placeholder="Address Type" required>
+          <input type="number" ngModel name="provinceCode" placeholder="Province Code" required>
+          <input type="text" ngModel name="provinceName" placeholder="Province Name" required>
+          <input type="number" ngModel name="income" placeholder="Income" required>
+          <input type="text" ngModel name="segment" placeholder="Segment" required>
+          <!-- Multi-select input list -->
+          <select ngModel name="accountOptions" multiple>
+            <option value="newCust">New Customer</option>
+            <option value="residenceIndex">Resides in Bank Country</option>
+            <option value="foreignerIndex">Foreigner</option>
+            <option value="spouseIndex">Spouse of Employee</option>
+            <option value="deceasedIndex">Deceased</option>
+            <option value="activityIndex">Active Customer</option>
+            <option value="savingAccount">Saving Account</option>
+            <option value="guarantees">Guarantees</option>
+            <option value="currentAccounts">Current Accounts</option>
+            <option value="derivadaAccount">Derivada Account</option>
+            <option value="payrollAccount">Payroll Account</option>
+            <option value="juniorAccount">Junior Account</option>
+            <option value="masParticularAccount">Mas Particular Account</option>
+            <option value="particularAccount">Particular Account</option>
+            <option value="particularPlusAccount">Particular Plus Account</option>
+            <option value="shortTermDeposits">Short Term Deposits</option>
+            <option value="mediumTermDeposits">Medium Term Deposits</option>
+            <option value="longTermDeposits">Long Term Deposits</option>
+            <option value="eAccount">Electronic Account</option>
+            <option value="funds">Funds</option>
+            <option value="mortgage">Mortgage</option>
+            <option value="pensions">Pensions</option>
+            <option value="loans">Loans</option>
+            <option value="taxes">Taxes</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="securities">Securities</option>
+            <option value="homeAccount">Home Account</option>
+            <option value="payroll">Payroll</option>
+            <option value="pensionsTwo">Pensions (again)</option>
+            <option value="directDebit">Direct Debit</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn" type="submit">Create account</button>
+    </form>
+    <p routerLink="/login" class="message">Already registered? <a>Login</a></p>
+    <h5><a href="#">Back home</a></h5>
+  </div>
+</div>
